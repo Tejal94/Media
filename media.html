@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tags</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sec {
+            height: 80vh;
+            width: 40%;
+            background-color: rgb(247, 247, 215);
+            float: left;
+        }
+
+        .nav {
+            background-color: lightgreen;
+            height: 10vh;
+            padding: 10px;
+        }
+
+        .subhead {
+            color: brown;
+            font-size: medium;
+            font-style: italic;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        #side {
+            float: right;
+            height: 80vh;
+            width: 60%;
+            background-color: cornflowerblue;
+            padding: 30px;
+        }
+
+        .footer{
+            background-color: lightgreen;
+            height: 90vh;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <h2> Adding media using HTML</h2>
+    </header>
+    <section class="sec">
+        <p class="subhead">Sample audio file</p> <br>
+        <audio controls>
+            <source src="audio.mp3">
+        </audio><br>
+        <hr>
+        <p class="subhead">Sample Video file </p> <br>
+        <video width="450" height="250" controls preload="auto">
+            <source src="video.mp4">
+        </video>
+    </section>
+    <aside id="side">
+        <iframe src="https://embed.lottiefiles.com/animation/43901" frameborder="0" height="200" width="200"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.837707732558!2d73.79797841605517!3d18.445676412604517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc295091df823d7%3A0x3a5be62153b3ca11!2sEisha%20Erica%2C%20DSK%20Vishwa%2C%20Dhayari%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1664099953486!5m2!1sen!2sin"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+    <footer class="footer">
+        <a href="www.google.com"><h3>Google</h3></a>
+    </footer>
+</body>
+
+</html>
